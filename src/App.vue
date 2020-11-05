@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-   <button @click="$refs.dialog.visible = true">Open</button>
+   <button @click="$refs.dialog.show()">Open</button>
 
     <SimpleDialog ref="dialog" :visible="visible"/>
   </div>
