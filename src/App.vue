@@ -1,27 +1,19 @@
 <template>
   <div id="app">
-   <button>Open</button>
+   <button @click="visible = true">Open</button>
 
-    <div class="dialog-window" v-show="visible">
-      <header>
-        <h1>Le titre</h1>
-      </header>
-      <div class="main">
-        Contenu
-      </div>
-      <footer>
-        <button>Close</button>
-      </footer>
-    </div>
-
+    <SimpleDialog :visible="visible"/>
   </div>
 </template>
 
 <script>
 
+import SimpleDialog from "@/components/SimpleDialog";
+
 export default {
   name: 'App',
   components: {
+    SimpleDialog
 
   },
   data: function () {
@@ -32,6 +24,3 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
