@@ -1,7 +1,7 @@
 <template>
   <div class="dialog-window" v-show="visible">
     <header>
-      <h1>Le titre</h1>
+      <h1>{{titre}}</h1>
     </header>
     <div class="main">
       Contenu
@@ -15,9 +15,9 @@
 export default {
   name: 'SimpleDialog',
   props: {
-    initialVisible: {
-      type: Boolean,
-      default: false,
+    titre: {
+      type: String,
+      default: "Le titre par défaut",
     }
     //visible: {}
   },
