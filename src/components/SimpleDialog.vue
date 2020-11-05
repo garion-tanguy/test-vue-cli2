@@ -15,11 +15,15 @@
 export default {
   name: 'SimpleDialog',
   props: {
+    initialVisible: {
+      type: Boolean,
+      default: false,
+    }
     //visible: {}
   },
   data: function () {
     return {
-       visible:false,
+       visible:this.initialVisible,
     }
   },
   methods: {
