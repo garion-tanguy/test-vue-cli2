@@ -15,7 +15,12 @@
 export default {
   name: 'SimpleDialog',
   props: {
-    visible: {}
-  }
+    //visible: {}
+  },
+  data: function () {
+    return {
+       visible:false,
+    }
+  },
 }
 </script>
