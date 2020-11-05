@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-   <button @click="visible = true">Open</button>
+   <button @click="$refs.dialog.visible = true">Open</button>
 
-    <SimpleDialog :visible="visible"/>
+    <SimpleDialog ref="dialog" :visible="visible"/>
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
   },
   data: function () {
     return {
-      visible:false,
+     // visible:false,
     }
   },
 }
